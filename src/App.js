@@ -11,7 +11,6 @@ import Nav from './components/Nav'
 function App() {
   return (
     <Router>
-      {/* <Nav /> */}
       <Switch>
         <Route path="/">
           <Facts />
