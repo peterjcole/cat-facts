@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="/"><h4 className="title is-4"><FontAwesomeIcon icon={faCat} /> Cat Facts</h4></a>
+        <a className="navbar-item" href="/"><h4 className="title is-4"><FontAwesomeIcon icon={faCat} color="#e76f51"/> Cat Facts</h4></a>
       </div>
 
       <div className="navbar-end">
