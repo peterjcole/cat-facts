@@ -17,11 +17,16 @@ const config = {
 if (!firebase.apps.length) {
   firebase.initializeApp(config)
   firebase.analytics()
-  const firestore = firebase.firestore()
 
   if (typeof window !== 'undefined') {
     firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
   }
+}
+
+if (!firebase.auth().currentUser) {
+  firebase.auth().signInAnonymously().then(user => console.log(user)).catch(function(error) {
+    console.log(error)
+  });
 }
 
 export default firebase

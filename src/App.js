@@ -6,12 +6,15 @@ import {
 } from "react-router-dom"
 
 import Facts from './components/Facts'
-import Nav from './components/Nav'
+import Add from './components/Add'
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/add">
+          <Add />
+        </Route>
         <Route path="/">
           <Facts />
         </Route>

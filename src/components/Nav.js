@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCat } from '@fortawesome/free-solid-svg-icons'
 
@@ -12,9 +13,9 @@ function Nav() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-primary">
+              <Link to="/add" className = "button is-primary">
                 <strong>Add a fact</strong>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
