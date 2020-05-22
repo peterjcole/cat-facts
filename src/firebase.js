@@ -24,7 +24,7 @@ if (!firebase.apps.length) {
 }
 
 if (!firebase.auth().currentUser) {
-  firebase.auth().signInAnonymously().then(user => console.log(user)).catch(function(error) {
+  firebase.auth().signInAnonymously().catch(function(error) {
     console.log(error)
   });
 }
